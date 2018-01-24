@@ -32,15 +32,9 @@
     filter: blur(0px) grayscale(0%);
 }
 
-
-/* include dark css from userstyles.org here */
-/* 
- * 2018/01/24	
- * m0x23
- */
-
 /* fancier grey emoji menu and emoji search selector -- OPTIONAL */
 /* delete or comment out if not needed */
+
 .block-compose .input-container {
     background-color: #2C2C2C !important;
     color: #1C8B82 !important;
