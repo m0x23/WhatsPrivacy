@@ -1,0 +1,83 @@
+/* include a dark 'base' css from userstyles.org here */
+/* 
+ * 2018/01/24	
+ * m0x23
+*/
+
+/* privacy? - this blurs out errything dude - feel free to edit to your needs */
+
+.chatlist-main {
+    background-color: #1d1d1d;
+}
+.chatlist > div > .infinite-list-item {
+    filter: blur(5px) grayscale(65%);
+    transition: 250ms ease-in-out;
+}
+.chat {
+    filter: blur(5px) grayscale(65%);
+    transition: 250ms ease-in-out;
+}
+.chat:hover {
+    filter: blur(0px) grayscale(0%);
+}
+.chatlist > div > .infinite-list-item:hover {
+    filter: blur(0px) grayscale(0%);
+}
+.message-image {
+    filter: blur(20px) grayscale(65%);
+    transition: 250ms ease-in-out;
+}
+.message-image:hover,
+.message-image.active {
+    filter: blur(0px) grayscale(0%);
+}
+
+
+/* include dark css from userstyles.org here */
+/* 
+ * 2018/01/24	
+ * m0x23
+ */
+
+/* fancier grey emoji menu and emoji search selector -- OPTIONAL */
+/* delete or comment out if not needed */
+.block-compose .input-container {
+    background-color: #2C2C2C !important;
+    color: #1C8B82 !important;
+}
+.emoji-panel-body-container,
+.emoji-search-row,
+.emoji-search,
+.dropdown-picker,
+.dropdown-picker .nib {
+    background: #2C2C2C !important;
+}
+.emoji-panel-header {
+    background: #2C2C2C !important;
+}
+.emoji-search-row-input {
+    background-color: #2C2C2C !important;
+}
+.emojitext {
+    color: #54ff9e!important;
+}
+.emojik {
+    transition: 150ms ease-in-out;
+    position: relative !important;
+    border-radius: 50% !important;
+}
+.emojik:after {
+    content: '';
+    position: absolute;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    left: -1px;
+    top: -1px;
+    border-radius: 50%;
+    border: 2px solid grey;
+}
+.emojik:focus,
+.emojik:hover,
+.emojik.selected {
+    box-shadow: 0 0 0px 3px grey !important;
+}
